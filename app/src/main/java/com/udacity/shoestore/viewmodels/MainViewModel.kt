@@ -32,3 +32,4 @@ class MainViewModel : ViewModel() {
         _shoeList.value = defaultList
     }
 }
+
