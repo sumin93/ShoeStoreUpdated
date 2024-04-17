@@ -25,7 +25,6 @@ class MainViewModel : ViewModel() {
                 Shoe(
                     name = "Name$i",
                     company = "Company$i",
-                    size = i.toDouble(),
                     description = "Description$i"
                 )
             )
@@ -33,3 +32,4 @@ class MainViewModel : ViewModel() {
         _shoeList.value = defaultList
     }
 }
+
