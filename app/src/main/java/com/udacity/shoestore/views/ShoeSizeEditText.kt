@@ -40,12 +40,4 @@ class ShoeSizeEditText : TextInputEditText {
         defStyleAttr: Int
     ) : super(context, attributeSet, defStyleAttr)
 
-    fun setShoeSize(size: Double) {
-        this.setText(size.toString())
-    }
-
-    fun getShoeSize(): Double {
-        val sizeAsString = this.text?.toString() ?: "0.0"
-        return sizeAsString.toDouble()
-    }
 }

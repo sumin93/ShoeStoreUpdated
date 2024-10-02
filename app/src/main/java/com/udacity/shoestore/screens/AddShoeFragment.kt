@@ -12,11 +12,11 @@ import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.NavController
 import androidx.navigation.fragment.findNavController
-import com.udacity.shoestore.viewmodels.MainViewModel
 import com.udacity.shoestore.R
 import com.udacity.shoestore.databinding.FragmentAddShoeBinding
 import com.udacity.shoestore.models.Shoe
 import com.udacity.shoestore.viewmodels.AddShoeViewModel
+import com.udacity.shoestore.viewmodels.MainViewModel
 
 class AddShoeFragment : Fragment() {
 
@@ -89,7 +89,7 @@ class AddShoeFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         activityViewModel = activityViewModels<MainViewModel>().value
         binding.viewModel = fragmentViewModel
-        binding.shoe = Shoe("",0.0,"","")
+        binding.shoe = Shoe(name = "", company = "", description = "")
         binding.buttonCancel.setOnClickListener {
             navController.navigateUp()
         }
